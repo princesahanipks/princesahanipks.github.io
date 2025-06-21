@@ -137,6 +137,27 @@
 	      </div>
 	    </div>
 	  </nav>
+	  <!-- ...existing code... -->
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+  <!-- ...existing nav code... -->
+</nav>
+
+<!-- Background music start -->
+<audio id="bg-music" src="images/song1.mp3" loop></audio>
+<script>
+  function playMusic() {
+    var audio = document.getElementById('bg-music');
+    audio.volume = 0.5; // Volume adjust kar sakte hain
+    audio.play();
+    document.removeEventListener('click', playMusic);
+    document.removeEventListener('keydown', playMusic);
+  }
+  document.addEventListener('click', playMusic);
+  document.addEventListener('keydown', playMusic);
+</script>
+<!-- Background music end -->
+
+<!-- ...existing code... -->
 	  <section id="home-section" class="hero">
 		  <div class="home-slider  owl-carousel">
 	       <div class="slider-item ">
